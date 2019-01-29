@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>javascript Tutorials</title>
+            <link rel="stylesheet" href="file.css"/>
+        </head>
+        <body>
+            <div>
+             <form name="calcform">
+                <input type="text" name="txt1" style="width: 120%;position: relative;top: 10px;right: 35px;background-color: white;"><br>
+                <input type="button" name="btn9" value="9" onclick=displaynum(btn9.value)>
+                <input type="button" name="btn8" value="8" onclick=displaynum(btn8.value)>
+                <input type="button" name="btn7" value="7" onclick=displaynum(btn7.value)>
+                <input type="button" name="addbtn" value="+" onclick=displaynum(addbtn.value)><br>
+                <input type="button" name="btn6" value="6" onclick=displaynum(btn6.value)>
+                <input type="button" name="btn5" value="5" onclick=displaynum(btn5.value)>
+                <input type="button" name="btn4" value="4" onclick=displaynum(btn4.value)>
+                <input type="button" name="subbtn" value="-" onclick=displaynum(subbtn.value)><br>
+                <input type="button" name="btn3" value="3" onclick=displaynum(btn3.value)>
+                <input type="button" name="btn2" value="2" onclick=displaynum(btn2.value)>
+                <input type="button" name="btn1" value="1" onclick=displaynum(btn1.value)>
+                <input type="button" name="mulbtn" value="*" onclick=displaynum(btn2.value)><br>
+                <input type="button" name="btn0" value="0" onclick=displaynum(btn0.value)>
+                <input type="button" name="dotbtn" value="." onclick=displaynum(dotbtn.value)>
+                <input type="button" name="eqlbtn" value="=" onclick=txt1.value=eval(txt1.value)>
+                <input type="button" name="divbtn" value="/" onclick=displaynum(divbtn.value)>
+             </form>
+            </div>
+            
+           
+            
+            <script src="file.js"></script>
+
+        </body>
+    </html>
+----------------------------------------------
+#Css
+
+div
+{
+    width: 30%;
+    margin: 50px auto;
+    background-color: cornflowerblue;
+    height: 144px
+}
+div form
+{
+  margin: 48px;
+}
+div input
+{
+  position: relative;
+    top: 16px;
+    right: 19px;
+    background-color: darkgrey;
+     margin-left: 2px;
+    margin-top: 2px;
+}
+
+
+-------------------------------------------------
+#js
+
+function displaynum(n1){
+    
+  calcform.txt1.value= calcform.txt1.value+n1;
+  
+}
